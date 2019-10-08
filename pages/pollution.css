@@ -1,0 +1,37 @@
+#iaqiun 
+{
+	color: green;
+}
+
+#iaqideux
+{
+	color : yellow;
+}
+
+#iaqitrois
+{
+	color: orange;
+}
+
+#iaqiquatre
+{
+	color: red;
+}
+#iaqicinq
+{
+	color: purple;
+}
+#iaqisix
+{
+	color: maroon;
+}
+
+.ecolo {
+	background-image: url('../assets/images/velovert.jpg');
+}
+
+.pasecolo {
+	background-image: url('../assets/images/velo.jpg');
+	background-position: 60%;
+	height: auto;
+}
