@@ -1,9 +1,10 @@
-
 var nameCity = document.getElementById('nameCity');
 
 
-
-fetch("http://marcelle-mobi-api.herokuapp.com/air/quality_by_coordinates?lat=43.3&lng=5.4&grant_token=code4marseillefrioul").then(function(response) {
+function api() {
+var city = document.getElementById('city').value 	
+document.getElementById('carte').innerHTML = '<img src="../assets/images/pollution.png">'
+fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
         return response.json();
     }).then(function(result) {
     	nameCity.innerHTML += result.data.city.name + '<br>';
@@ -16,7 +17,7 @@ fetch("http://marcelle-mobi-api.herokuapp.com/air/quality_by_coordinates?lat=43.
     		document.getElementById('tableau').innerHTML = '<br>' + 'La qualité de l\'air est jugée satisfaisante, et la pollution de l\'air pose peu ou pas de risque.';
     	} else if (aqi > 50 && aqi < 101) {
     		let resultAqi = (300 - aqi) / 30; 
-    		document.getElementById('test').innerHTML = '<img src="../assets/images/velovert.jpg">';
+    		document.getElementById('test').innerHTML = '<a href="https://www.marcelle.mobi/map"><img src="../assets/images/velovert.jpg"></a>';
     		let resultAqiFixed = resultAqi.toFixed(1);
     		document.getElementById('aqi').innerHTML = '<br>' + resultAqiFixed + ' / 10 ' + 'Modéré';
     		document.getElementById('tableau').innerHTML = '<br>' + 'La qualité de l\'air est acceptable. Cependant, pour certains polluants, il peut y avoir un risque sur la santé pour un très petit nombre de personnes inhabituellement sensibles à la pollution atmosphérique.';
@@ -80,4 +81,4 @@ fetch("http://marcelle-mobi-api.herokuapp.com/air/quality_by_coordinates?lat=43.
     }).catch(function(error) {
        
     });
-
+}
