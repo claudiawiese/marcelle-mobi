@@ -71,7 +71,7 @@ fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&g
 
       } else if (aqi > 50 && aqi < 101) {
         let resultAqi = (300 - aqi) / 30;
-        document.getElementById('test').innerHTML = '<a href="https://www.marcelle.mobi/map"><img style="width:40px;"src="../assets/images/velovert.jpg"></a> Privilégiez le vélo';
+        document.getElementById('test').innerHTML = `<a href="https://www.marcelle.mobi/map"><img style="width:40px;"src="${require("../assets/images/velovert.jpg")}"></a> Privilégiez le vélo`;
         let resultAqiFixed = resultAqi.toFixed(1);
         document.getElementById('aqi').innerHTML = '<br>' + resultAqiFixed + ' / 10 ' + 'Modéré';
         document.getElementById('tableau').innerHTML = '<br>' + 'La qualité de l\'air est acceptable. Cependant, pour certains polluants, il peut y avoir un risque sur la santé pour un très petit nombre de personnes inhabituellement sensibles à la pollution atmosphérique.';
@@ -81,7 +81,7 @@ fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&g
         let resultAqiFixed = resultAqi.toFixed(1);
         document.getElementById('aqi').innerHTML =  '<br>' + resultAqiFixed + ' / 10 ' + 'Mauvais pour les personnes sensibles';
         document.getElementById('tableau').innerHTML = '<br>' + 'La qualité de l\'air est acceptable; Cependant, pour certains polluants, il peut y avoir un problème de santé modérée pour un très petit nombre de personnes qui sont particulièrement sensibles à la pollution de l\'air..';
-        document.getElementById('test').innerHTML = '<a href="https://www.marcelle.mobi/map"><img style="width:40px;"src="../assets/images/velovert.jpg"></a> Privilégiez le vélo';
+        document.getElementById('test').innerHTML = `<a href="https://www.marcelle.mobi/map"><img style="width:40px;"src="${require("../assets/images/velovert.jpg")}"></a> Privilégiez le vélo`;
 
       } else if (aqi > 150 && aqi < 201) {
         let resultAqi = (300 - aqi) / 30;
