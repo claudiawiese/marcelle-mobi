@@ -4,6 +4,9 @@ var nameCity = document.getElementById('nameCity');
 function api() {
 var city = document.getElementById('city').value 	
 document.getElementById('carte').innerHTML = '<img src="../assets/images/pollution.png">'
+document.getElementById('details').innerHTML = 'Détails des polluants dans l\'air (en AQI de 0 à 500)';
+document.getElementById('information').innerHTML = 'Plus d\'informations <a href="https://aqicn.org/here/fr/"> ici</a>'
+document.getElementById	('actions_preventions').innerHTML = 'Actions /préventions';
 fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
         return response.json();
     }).then(function(result) {
