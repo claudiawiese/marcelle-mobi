@@ -3,15 +3,15 @@
 <head>
     <title>Template Air quality</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="tableau.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a6c47b94c8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+
 	<link rel="stylesheet" type="text/css" href="pollution.css">
 </head>
 <body>
 <main>
+     
+
    <div id="eval">
       <p class="bon border">BON</p>
       <p class="modere border">MODERE</p>
@@ -23,27 +23,19 @@
     <br>
     <input id="city" type="text" name="city">
     <input type="submit" name="envoyer" onClick="api()">
-     <!--<p class="bon border">Bon</p>
-          <p class="modere border">Modéré</p>
-          <p class="sensible border">Sensible</p>
-          <p class="mauvais border">Mauvais</p>
-          <p class="tres_mauvais border">très mauvais</p>
-          <p class="dangereux border">Dangereux</p>-->
-
-
+  
 <div id="nameCity"></div>
 <div id="hour"> </div>
-<div id="aqi"></div>
-<div id="tableau"> </div>
+<div id="aqi" class="greeen"></div>
+<div id="tauxAqi" class="greeen" ></div>
+
+<div id="tableau" class="greeen" > </div>
+
 <br>
 <div id="test"> </div>
 <br>
-<div id="tauxAqi"></div>
-<br>
 
 
-<div id="action"></div>
-<br>
 <div id="details"></div>
 <br>
 
@@ -54,16 +46,13 @@
 <div id="iaqicinq"></div>
 <div id="iaqisix"></div>
 <br>
-
+<div id="action" ></div>
+<div id="titleCarte"></div>
 <div id="carte"></div>
 <br>
 <div id="information"></div>
 <br>
 </main>
-
-
-
-
 
 
 </body>

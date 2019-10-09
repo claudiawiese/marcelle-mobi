@@ -4,9 +4,16 @@
 }
 
 #eval:before, #eval:after {
-  color: white;
+
 }
 
+body {
+  background-color: white;
+  font-family: 'Open Sans', cursive;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+}
 
 main {
   width: 60%;
@@ -23,14 +30,14 @@ main {
 }
 
 #eval:before{
-  content: "Air sain";
+ 
   position: absolute;
   background-color: green;
   width: 155px;
   height: 155px;
   top: -4%;
   left: -15%;
-  border-radius: 50%;
+ 
   padding: 55px 0 0 44px;
   transition: all 2s ease-in;
   font-size: 20px;
@@ -38,7 +45,7 @@ main {
 }
 
 #eval:after{
-  content: "Air pollué";
+  
   position: absolute;
   background-color: red;
   width: 155px;
@@ -81,6 +88,7 @@ main {
   padding: 2%;
   text-align: center;
   font-weight: bold;
+  border-radius: 10px;
 }
 
 .border{
@@ -108,7 +116,7 @@ main {
   }
 
   #eval:before{
-    content: "Air sain";
+
     position: absolute;
     background-color: green;
     width: 120px;
@@ -122,7 +130,7 @@ main {
   }
 
   #eval:after{
-    content: "Air pollué";
+
     position: absolute;
     background-color: red;
     width: 120px;
@@ -137,7 +145,15 @@ main {
 
 }
 
-#aqiun
+
+
+.greeen {
+  color: green;
+}
+
+
+
+#iaqiun
 {
 color: green;
 }
@@ -165,12 +181,12 @@ color: purple;
 color: maroon;
 }
 
-.ecolo {
-background-image: url('../assets/images/velovert.jpg');
-}
+
 
 .pasecolo {
 background-image: url('../assets/images/velo.jpg');
 background-position: 60%;
 height: auto;
 }
+
+

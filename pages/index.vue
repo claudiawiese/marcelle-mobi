@@ -41,6 +41,7 @@
         <span class="ml-3 indice-quality">{{ $store.state.dashboard.airQualitySummary}}</span>
 
         <div>{{$store.state.dashboard.airQualityText}}</div>
+        <a href="http://localhost/marcelle-mobi/pages/pollution.html">plus d'informations </a>
       </div>
     </div>
     <!-- what to do today -->
@@ -121,27 +122,22 @@ export default {
   font-size: 1.1em;
   min-height: 100vh;
   padding: 2vh;
-
   i {
     font-size: 2.2em;
     padding: 10px;
   }
-
   .indice-quality {
     font-size: 2em;
   }
-
   .fa-thermometer-half {
     font-size: 1rem;
   }
   .fa-arrow-up {
     font-size: 1.5rem;
   }
-
   .fa-thermometer-half {
     font-size: 1rem;
   }
-
   @keyframes rotated {
     from {
       transform: rotate(0deg);
@@ -150,7 +146,6 @@ export default {
       transform: rotate(360deg);
     }
   }
-
   /* ------------------------------------------- */
   /* Buttons Dashboard */
   .btn-dark-blue {
@@ -160,13 +155,11 @@ export default {
     color: white !important;
     width: 330px;
   }
-
   .btn-secondary {
     color: #fff;
     background-color: transparent;
     border-color: transparent;
   }
-
   /* "Info Traffic RTM" Slide In Up*/
   .slideInUp {
     -webkit-animation-name: slideInUp;
@@ -176,7 +169,6 @@ export default {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-
   @-webkit-keyframes slideInUp {
     0% {
       -webkit-transform: translateY(100%);
@@ -188,7 +180,6 @@ export default {
       transform: translateY(30);
     }
   }
-
   @keyframes slideInUp {
     0% {
       -webkit-transform: translateY(100%);
@@ -206,21 +197,17 @@ export default {
 .modal_header {
   color: rgb(37, 169, 232);
 }
-
 .modal_title {
   color: rgba(0, 0, 0, 0.7);
 }
-
 .modal_description::first-letter {
   text-transform: uppercase;
 }
-
 .modal_description {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   text-transform: lowercase;
 }
-
 .modal_date {
   color: #0e5da4;
   font-size: 1rem;
@@ -229,20 +216,16 @@ export default {
 .modal_date::first-letter {
   text-transform: uppercase;
 }
-
 /* MODAL DESIGN  */
 .modal-dialog-scrollable {
   max-height: 70%;
 }
-
 .modal-dialog {
   margin: 0 auto !important;
 }
-
 .modal-content {
   border-radius: 15px 15px 0px 0px;
 }
-
 .btn-dark-blue {
   background-color: #0e5da4;
   padding: 7px 70px !important;
