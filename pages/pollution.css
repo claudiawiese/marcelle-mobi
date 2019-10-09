@@ -1,37 +1,176 @@
-#iaqiun 
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#eval:before, #eval:after {
+  color: white;
+}
+
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+#eval{
+  display: flex;
+  margin: 5% auto 0 auto;
+  justify-content: center;
+  padding: 2%;
+  position: relative;
+}
+
+#eval:before{
+  content: "Air sain";
+  position: absolute;
+  background-color: green;
+  width: 155px;
+  height: 155px;
+  top: -4%;
+  left: -15%;
+  border-radius: 50%;
+  padding: 55px 0 0 44px;
+  transition: all 2s ease-in;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#eval:after{
+  content: "Air pollué";
+  position: absolute;
+  background-color: red;
+  width: 155px;
+  height: 155px;
+  top: -4%;
+  right: -16%;
+  border-radius: 50%;
+  padding: 55px 0 0 38px;
+  transition: all 2s ease-in;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bon {
+  background-color: #83EF66 ;
+}
+
+.modere {
+  background-color:#66EFBD ;
+}
+
+.sensible {
+  background-color: #6696EF ;
+}
+
+.mauvais {
+  background-color: #FFFF00  ;
+}
+
+.tres_mauvais {
+  background-color: #FF4000 ;
+}
+
+.dangereux {
+  background-color: #FF0000 ;
+}
+
+#eval p {
+  width: 60%;
+  padding: 2%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.border{
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+
+/*---------------*/
+/* MEDIA QUERIES */
+/*---------------*/
+
+@media screen and (max-width:1120px) {
+
+  main {
+    width: 95%;
+  }
+
+  #eval{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+  }
+
+  #eval:before{
+    content: "Air sain";
+    position: absolute;
+    background-color: green;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 45px 0 0 39px;
+    font-size: 14px;
+    font-weight: bold;
+    top: -40%;
+    left: 39%;
+  }
+
+  #eval:after{
+    content: "Air pollué";
+    position: absolute;
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 45px 0 0 32px;
+    font-size: 14px;
+    font-weight: bold;
+    top: 100%;
+    left: 39%;
+  }
+
+}
+
+#aqiun
 {
-	color: green;
+color: green;
 }
 
 #iaqideux
 {
-	color : yellow;
+color : yellow;
 }
 
 #iaqitrois
 {
-	color: orange;
+color: orange;
 }
 
 #iaqiquatre
 {
-	color: red;
+color: red;
 }
 #iaqicinq
 {
-	color: purple;
+color: purple;
 }
 #iaqisix
 {
-	color: maroon;
+color: maroon;
 }
 
 .ecolo {
-	background-image: url('../assets/images/velovert.jpg');
+background-image: url('../assets/images/velovert.jpg');
 }
 
 .pasecolo {
-	background-image: url('../assets/images/velo.jpg');
-	background-position: 60%;
-	height: auto;
+background-image: url('../assets/images/velo.jpg');
+background-position: 60%;
+height: auto;
 }
