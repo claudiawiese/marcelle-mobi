@@ -41,7 +41,7 @@
         <span class="ml-3 indice-quality">{{ $store.state.dashboard.airQualitySummary}}</span>
 
         <div>{{$store.state.dashboard.airQualityText}}</div>
-        <a href="http://localhost/marcelle-mobi/pages/pollution.html">plus d'informations </a>
+        <nuxt-link to="/pollution">plus d'informations </nuxt-link>
       </div>
     </div>
     <!-- what to do today -->
