@@ -56,7 +56,7 @@ document.getElementById('details').innerHTML = '<h2>Détails des polluants</h2> 
 document.getElementById('information').innerHTML = 'Plus d \'informations <a href="https://aqicn.org/here/fr/"> ici</a>'
 let tableau = require("../assets/images/tableau.png")
 document.getElementById('action').innerHTML = '<h2>Actions</h2> <br> <img   style="width:700px"src="'+ tableau+'"></div>'
-fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
+fetch(`https://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
         return response.json();
     }).then(function(result) {
       nameCity.innerHTML += '<br> <h1>' + result.data.city.name + '</h1> <br>';

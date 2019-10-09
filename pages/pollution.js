@@ -7,7 +7,7 @@ document.getElementById('carte').innerHTML = '<img src="../assets/images/polluti
 document.getElementById('details').innerHTML = '<h2>Détails des polluants</h2> <br> (NO2: Dioxyde d\'azote, S02 : Dioxyde de soufre, O3 : Ozone, PM10 : Particules de taille inférieure à 10 micromètres)'
 document.getElementById('information').innerHTML = 'Plus d \'informations <a href="https://aqicn.org/here/fr/"> ici</a>'
 document.getElementById('action').innerHTML = '<h2>Actions</h2> <br> <img   style="width:700px"src="../assets/images/tableau.png"></div>'
-fetch(`http://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
+fetch(`https://marcelle-mobi-api.herokuapp.com/air/quality_by_city?city=${city}&grant_token=code4marseillefrioul`).then(function(response) {
         return response.json();
     }).then(function(result) {
     	nameCity.innerHTML += '<br> <h1>' + result.data.city.name + '</h1> <br>';
